@@ -7,8 +7,21 @@
   box-sizing: border-box;
   /* font-family: helvetica; */
   font-family: organetto;
+  font-family: LeitmotivTwo;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: hidden; 
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 html,
@@ -22,10 +35,10 @@ body {
 body {
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.2;
-  align-items: stretch;
+  line-height: 1.2; 
+  align-items: stretch; 
   color: #090b0e;
-  cursor: default;
+  cursor: default; 
   display: flex;
   flex-direction: column;
   font-family: GuruProximaNova, HelveticaNeue-Light, Helvetica Neue Light,

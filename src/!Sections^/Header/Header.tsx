@@ -8,9 +8,9 @@ const Header = () => {
         <Header_Parent>
             <Header_Wrapper>
                 <UBMedia_Container_Parent>
-                    <UBMedia_Logo_Wrapper>
+                    {/* <UBMedia_Logo_Wrapper>
                         <UBMedia_Logo src='/G/G_UBMedia_Logo.png'></UBMedia_Logo>
-                    </UBMedia_Logo_Wrapper>
+                    </UBMedia_Logo_Wrapper> */}
                 </UBMedia_Container_Parent>
 
                 <Header_Container_Main>
@@ -81,13 +81,12 @@ const Header_Container_Main = styled.section`
 `;
 
 const Header_Container_Dash = styled.div`
-    // border: 1.4px solid black;
-    width: calc(100% - 333px);
+    width: calc(100%);
     max-height: 76px;
     min-height: 76px;
     display: flex;
     position: relative;
-    margin-left: 24px;
+    margin-left: 144px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -106,7 +105,7 @@ const Header_Container_Panel = styled.div`
 
 const Header_Search = styled.div`
     cursor: pointer;
-    width: 280px;
+    width: 420px;
     padding: 0 14px;
     font-family: sans-serif;
     outline: #fff;
@@ -119,7 +118,8 @@ const Header_Search = styled.div`
     background: radial-gradient(circle, rgba(209,209,209,1) 0%, rgba(210,210,210,1) 50%, rgba(232,232,232,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d1d1d1",endColorstr="#e8e8e8",GradientType=1);
     box-shadow: rgb(228 228 228 / 7%) 12px 14px 23px 12px, rgb(112 112 112) 0px 6px 6px -111.1px;
-    
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 `;
 
 const Header_Search_Icon = styled.img`

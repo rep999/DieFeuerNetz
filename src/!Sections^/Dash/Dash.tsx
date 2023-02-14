@@ -28,7 +28,7 @@ const Dash = () => {
     const categorySelection = useStore((state) => state.categorySelection);
     // @ts-ignore
     const weightSelection = useStore((state) => state.weightSelection);
-    const [SubNavTitleText, setTheFireNetText] = useState('Welcome L\'OReal');
+    const [SubNavTitleText, setTheFireNetText] = useState('The FireNet');
     const [fireDT, setFireDT] = useState<any>([]);
     const [nwFireDT, setNwFireDT] = useState<any>([]);
     const [renderTG, setRenderTG] = useState<boolean>(false);
@@ -145,13 +145,13 @@ const Dash = () => {
                 </TopHeaderSpacerContainer>
                 <DockPanel>
                     <ByDateContainer>
-                        <ByDate onClick={() => ByDateClick()}>OnSite</ByDate>
+                        <ByDate onClick={() => ByDateClick()}>By Date</ByDate>
                     </ByDateContainer>
                     <ByCategoryContainer>
-                        <ByCategory onClick={() => ByCategoryClick()}>Social Media</ByCategory>
+                        <ByCategory onClick={() => ByCategoryClick()}>By Category</ByCategory>
                     </ByCategoryContainer>
                     <ByFireContainer>
-                        <ByFire onClick={() => ByFireClick()}>Offsite</ByFire>
+                        <ByFire onClick={() => ByFireClick()}>By Fire</ByFire>
                     </ByFireContainer>
                 </DockPanel>
             </TopHeaderContainer>
@@ -190,7 +190,9 @@ const TopHeaderContainer = styled.div`
     background: -webkit-linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(50,50,50,1) 33%, rgba(41,41,41,1) 66%, rgba(27,27,27,1) 100%);
     background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(50,50,50,1) 33%, rgba(41,41,41,1) 66%, rgba(27,27,27,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#222222",endColorstr="#1b1b1b",GradientType=1);
-`;
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    `;
 const TopHeaderTitleRow = styled.div`
     /* border: 2px solid orange; */
     height: 45%;
@@ -209,16 +211,18 @@ const WelcomeTitleContainer = styled.div`
 
 const SubNavTitle = styled.div`
     height: auto;
-    width: auto;
+    width: 108%;
     text-align: center;
     font-family: organetto;
-    letter-spacing: 1.28px;
-    font-weight: bold;
+    font-family: LeitmotivTwo;
+    letter-spacing: 2.8px;
+    // font-weight: bold;
     color: #ededed;
-    font-size: 21.21px;
+    margin-bottom: 3.3px;
+    font-size: 33.33px;
     text-align: center;
     position: relative;
-    top: 6.6px;
+    // top: 6.6px;
     // background: transparent;
     // box-shadow: rgb(128 128 145 / 45%) 0px 1px 42px 3px;
 `;
@@ -233,8 +237,7 @@ const TopHeaderSpacerContainer = styled.div`
 `;
 
 const DockPanel = styled.div`
-    // border: 2px solid pink;
-    height: 39%;
+    height: 44%;
     width: 100%;
     display: flex;
     justify-content: center;ß
@@ -243,51 +246,56 @@ const DockPanel = styled.div`
 
 const ByDateContainer = styled.div`
     height: 100%;
-    width: 23%;
+    width: 144px;
+    cursor: pointer;
     display: flex;
+    color: #ededed;
     justify-content: center;
     align-items: center;
 `;
 
 const ByDate = styled.span`
-    height: 100%;
-    width: 44%;
+    height: 123%;
+    width: 80%;
+    margin-bottom: 8px;
     text-align: center;
     color: #ededed;
-    font-size: 13.33px;
-    cursor: pointer;
     display: flex;
+    font-size: 28.33px;
     white-space: nowrap;
     align-items: center;
-    font-weight: 800;
+    width: 64%;
+    font-weight: 100;
 `;
 
 const ByFireContainer = styled.div`
-    // border: 2px solid pink;
-    height: 100%;
-    width: 23%;
+    height: 123%;
+    width: 144px;
+    cursor: pointer;
     display: flex;
+    color: #ededed;
     justify-content: center;
     align-items: center;
 `;
 
 const ByFire = styled.span`
-    height: 100%;
-    width: 41%;
+    height: 119%;
+    width: 80%;
+    padding-left: 20px;
+    margin-bottom: 14.4px;
     text-align: center;
-    color: black;
-    font-size: 13.33px;
-    cursor: pointer;
-    display: flex;
     color: #ededed;
+    display: flex;
+    font-size: 28.33px;
     white-space: nowrap;
     align-items: center;
-    font-weight: 800;
+    width: 64%;
+    font-weight: 100;
 `;
 
 const ByCategoryContainer = styled.div`
     height: 100%;
-    width: 23%;
+    width: 144px;
     cursor: pointer;
     display: flex;
     color: #ededed;
@@ -296,16 +304,24 @@ const ByCategoryContainer = styled.div`
 `;
 
 const ByCategory = styled.span`
-    height: 100%;
-    width: 55%;
-    text-align: center;
-    color: #ededed;
-    display: flex;
-    font-size: 13.33px;
-    white-space: nowrap;
-    align-items: center;
-    width: 64%;
-    font-weight: 800;
+height: 133%;
+width: 80%;
+margin-bottom: 18px;
+text-align: center;
+margin-bottom: 12px;
+color: #ededed;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+font-size: 28.33px;
+white-space: nowrap;
+-webkit-align-items: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+width: 64%;
+font-weight: 100;
 `;
 
 const DockBtnSpace = styled.div`
@@ -415,6 +431,8 @@ const TopHeaderSpacer = styled.div`
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ecebff",endColorstr="#c1f5ff",GradientType=1);
     display: flex;
     transform: scale(.77);
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 `;
 
 const TopHeaderCatchUpText = styled.div`

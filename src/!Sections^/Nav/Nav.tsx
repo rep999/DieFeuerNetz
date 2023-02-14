@@ -16,7 +16,7 @@ const Nav = () => {
                                                 <SagePNG src='/G_Icons/Dashboard_Icon.png'></SagePNG>
                                             </SVGSage_Wrapper>
                                         </TextSageDecoration_Icon>
-                                        <LILabel>Dashboard</LILabel>
+                                        <LILabel>Cockpit</LILabel>
                                     </DecoratedTextSage>
                                 </IconTextSage>
                             </NavListLink>
@@ -30,7 +30,7 @@ const Nav = () => {
                                                 <SagePNG src='/G_Icons/Self_Serve_Icon.png'></SagePNG>
                                             </SVGSage_Wrapper>
                                         </TextSageDecoration_Icon>
-                                        <LILabel>Self Serve</LILabel>
+                                        <LILabel>Auxillary</LILabel>
                                     </DecoratedTextSage>
                                 </IconTextSage>
                             </NavListLink>
@@ -44,7 +44,7 @@ const Nav = () => {
                                                 <SagePNG src='/G_Icons/Ad_Products_Icon.png'></SagePNG>
                                             </SVGSage_Wrapper>
                                         </TextSageDecoration_Icon>
-                                        <LILabel>Ad Products</LILabel>
+                                        <LILabel>Distribute</LILabel>
                                     </DecoratedTextSage>
                                 </IconTextSage>
                             </NavListLink>
@@ -58,7 +58,7 @@ const Nav = () => {
                                                 <SagePNG src='/G_Icons/Reports_Icon.png'></SagePNG>
                                             </SVGSage_Wrapper>
                                         </TextSageDecoration_Icon>
-                                        <LILabel>Reports</LILabel>
+                                        <LILabel>Documents</LILabel>
                                     </DecoratedTextSage>
                                 </IconTextSage>
                             </NavListLink>
@@ -72,7 +72,7 @@ const Nav = () => {
                                                 <SagePNG src='/G_Icons/Audience_Icon.png'></SagePNG>
                                             </SVGSage_Wrapper>
                                         </TextSageDecoration_Icon>
-                                        <LILabel>Audience</LILabel>
+                                        <LILabel>Circles</LILabel>
                                     </DecoratedTextSage>
                                 </IconTextSage>
                             </NavListLink>
@@ -98,7 +98,9 @@ const NavParent = styled.section`
     background: -webkit-radial-gradient(circle, rgba(62,62,62,1) 0%, rgba(65,65,65,1) 33%, rgba(59,59,59,1) 66%, rgba(56,56,56,1) 100%);
     background: radial-gradient(circle, rgba(62,62,62,1) 0%, rgba(65,65,65,1) 33%, rgba(59,59,59,1) 66%, rgba(56,56,56,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3e3e3e",endColorstr="#383838",GradientType=1);
-`;
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    `;
 
 const NavWrapper = styled.div`
     border: 1.4px solid black;
@@ -146,12 +148,11 @@ const NavListLink = styled.a`
     color: #b59ceb;
     display: flex;
     font-size: 14px;
-    height: 36px;
+    height: 42px;
     line-height: 1;
     position: relative;
     text-decoration: none;
     width: 100%;
-    height: 36px;
     width: 226px;
 `;
 const IconTextSage = styled.span`
@@ -209,13 +210,15 @@ const SagePNG = styled.img`
 `;
 const LILabel = styled.span`
     text-align: center;
-    color: #75b6e7;
+    color: #ededed;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 12.3px;
+    font-size: 28px;
     left: 3.3px;
     position: relative;
-    font-weight: 600!important;
+    font-weight: 100!important;
     font-family: organetto;
-    letter-spacing: 0.66px;
+    font-family: LeitmotivTwo;
+    letter-spacing: 3.33px;
+    bottom: 1.8px;
 `;

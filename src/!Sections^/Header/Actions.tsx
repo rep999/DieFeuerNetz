@@ -37,8 +37,8 @@ const Actions_Parent = styled.div`
 // 205.79   127.184     78.60
 
 const CartWrapper = styled.div`
-    height: 23px;
-    widht: 23px;
+    height: 33px;
+    widht: 33px;
 `;
 
 const Cart = styled.img`
