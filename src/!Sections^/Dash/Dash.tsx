@@ -180,7 +180,7 @@ const DashContainer = styled.div`
 `;
 
 const TopHeaderContainer = styled.div`
-    height: 12.12%;
+    height: 14.4%;
     min-height: 93px;
     max-height: 103px;
     width: 100%;
