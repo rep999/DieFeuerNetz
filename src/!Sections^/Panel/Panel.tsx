@@ -272,7 +272,6 @@ const PanelParent = styled.div`
     background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(50,50,50,1) 33%, rgba(41,41,41,1) 66%, rgba(27,27,27,1) 100%);
     background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-
     `;
 
 const PanelWrapper = styled.div`

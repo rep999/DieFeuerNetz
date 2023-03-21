@@ -86,7 +86,7 @@ const Header_Container_Dash = styled.div`
     min-height: 76px;
     display: flex;
     position: relative;
-    margin-left: 144px;
+    margin-left: 54px;
     display: flex;
     justify-content: start;
     align-items: center;

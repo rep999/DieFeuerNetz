@@ -219,6 +219,6 @@ const LILabel = styled.span`
     font-weight: 100!important;
     font-family: organetto;
     font-family: LeitmotivTwo;
-    letter-spacing: 3.33px;
+    letter-spacing: 2.3px;;
     bottom: 1.8px;
 `;

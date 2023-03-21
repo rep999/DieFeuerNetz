@@ -210,15 +210,14 @@ const WelcomeTitleContainer = styled.div`
 `;
 
 const SubNavTitle = styled.div`
-    height: auto;
+    height: 108%;
     width: 108%;
     text-align: center;
     font-family: organetto;
     font-family: LeitmotivTwo;
     letter-spacing: 2.8px;
-    // font-weight: bold;
     color: #ededed;
-    margin-bottom: 3.3px;
+    margin-top: 1.3px;
     font-size: 33.33px;
     text-align: center;
     position: relative;
@@ -256,14 +255,14 @@ const ByDateContainer = styled.div`
 
 const ByDate = styled.span`
     height: 123%;
-    width: 80%;
+    width: 100%;
     margin-bottom: 8px;
     text-align: center;
     color: #ededed;
     display: flex;
     font-size: 28.33px;
     white-space: nowrap;
-    align-items: center;
+    align-items: center; 
     width: 64%;
     font-weight: 100;
 `;
@@ -320,7 +319,7 @@ white-space: nowrap;
 -webkit-box-align: center;
 -ms-flex-align: center;
 align-items: center;
-width: 64%;
+width: 100%;
 font-weight: 100;
 `;
 
